@@ -1,0 +1,28 @@
+<div class="container d-flex flex-column">
+  <div class="card col-10 col-lg-8 m-auto mt-5">
+    <h5 class="card-header text-white text-center bg-primary">Stupid coach</h5>
+    <div class="card-body">
+      <div class="col-12 mb-3">
+        <h2>Question:</h2>
+        <h3 class="text-center text-danger">
+          <%= @question%>
+        </h3>
+        <p class="fw-bold">-You</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card col-10 col-lg-8 m-auto mt-5">
+    <h5 class="card-header text-white text-center bg-primary">Response</h5>
+    <div class="card-body">
+      <div class="col-12 mb-3">
+        <h2>Answer:</h2>
+        <h3 class="text-center text-success">
+          <%= @answer %>
+        </h3>
+        <p class="fw-bold">-Your coach</p>
+      </div>
+    </div>
+  </div>
+  <%= link_to "New question", ask_path, class:"btn btn-outline-primary mt-3" %>
+</div>
